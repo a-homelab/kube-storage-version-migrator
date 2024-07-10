@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: initializer
+  namespace: kube-system
+spec:
+  template:
+    spec:
+      containers:
+      - name: initializer
+        image: us.gcr.io/k8s-artifacts-prod/storage-migrator/storage-version-migration-initializer:v0.0.5
+      restartPolicy: Never
+  backoffLimit: 4
