@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: trigger
-  namespace: kube-storage-version-migrator
+  namespace: NAMESPACE
   labels:
     app: trigger
 spec:
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: trigger
-        image: us.gcr.io/k8s-artifacts-prod/storage-migrator/storage-version-migration-trigger:VERSION
+        image: REGISTRY/storage-version-migration-trigger:VERSION
         livenessProbe:
           httpGet:
             scheme: HTTP

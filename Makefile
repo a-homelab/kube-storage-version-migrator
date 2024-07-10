@@ -1,5 +1,6 @@
 export REGISTRY = us.gcr.io/k8s-artifacts-prod/storage-migrator
 export VERSION = v0.0.5
+export NAMESPACE = kube-storage-version-migrator
 
 .PHONY: manifests clean
 

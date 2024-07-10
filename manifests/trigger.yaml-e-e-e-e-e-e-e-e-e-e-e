@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: trigger
-  namespace: kube-storage-version-migrator
+  namespace: NAMESPACE
   labels:
     app: trigger
 spec:
