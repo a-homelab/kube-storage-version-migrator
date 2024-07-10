@@ -1,0 +1,4 @@
+[submodule "kube-storage-version-migrator"]
+	path = kube-storage-version-migrator
+	url = https://github.com/kubernetes-sigs/kube-storage-version-migrator.git
+	tag = v0.0.5
